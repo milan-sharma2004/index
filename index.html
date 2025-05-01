@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Chitwan Hospital</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="Java.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Chitwan Hospital</h1>
+        
+    </header>
+
+    <main>
+        <section id="specializations">
+            <h2>Our Specializations</h2>
+            <div class="specializations-grid"></div>
+            <div id="staff-details" class="staff-card"></div>
+        </section>
+
+        <section id="booking">
+            <h2>Patient Registration Form</h2>
+            <form id="booking-form">
+                <label>Full Name: <input type="text" name="name" required /></label>
+                <label>Contact Number: <input type="tel" name="contact" required /></label>
+                <label>Date of Birth: <input type="date" name="dob" required /></label>
+                <label>Disease/Symptoms: <input name="symptoms" required></input></label>
+
+                <label>Choose Specialization:
+                    <select name="department" id="department" required>
+                        <option value="">-- Select --</option>
+                        <option value="General Medicine">General Medicine</option>
+                        <option value="Gynaecology">Gynaecology</option>
+                        <option value="Radiology">Radiology</option>
+                        <option value="Dermatology">Dermatology</option>
+                        <option value="Neurology">Neurology</option>
+                    </select>
+                </label>
+
+                <label>Appointment Type:
+                    <select name="patient-type" id="patient-type" required>
+                        <option value="">-- Select --</option>
+                        <option value="OP">Outpatient (OP)</option>
+                        <option value="IP">Inpatient (IP)</option>
+                    </select>
+                </label>
+
+                <div id="room-options">
+                    <label>Choose Room:
+                        <select name="room" id="room">
+                            <option value=""> Select Room </option>
+                            <option value="General">General - $100/day</option>
+                            <option value="Private">Private - $200/day</option>
+                            <option value="ICU">ICU - $500/day</option>
+                        </select>
+                    </label>
+                    <label>Number of Days:
+                        <input type="number" id="days" name="days" min="1" value="1" required />
+                    </label>
+                </div>
+
+                <label>Patient ID: <input type="text" /></label>
+
+                <button type="submit">Calculate & Submit</button>
+            </form>
+
+            <div id="payment-result"></div>
+        </section>
+    </main>
+
+    <p> Terms & Conditions </p>
+    <p> Chitwan Hospital PTY. LTD. </p>
+</body>
+</html>
+
+

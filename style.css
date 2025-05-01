@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'ariel';
+}
+
+body {
+    background-color: #0000;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0e34f1;
+    color: white;
+    padding: centre;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 10
+}
+
+.staff-card img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.specializations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2px;
+    margin-top: 5px;
+}
+
+.specialization-item {
+    background-color: white;
+    border: 1px solid ;
+    padding: 1px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3sec;
+}
+
+.specialization-item:hover {
+    transform: scale:1x;
+    background-color: #f8fcfd ; 
+}
+
+
+
+
+
+
+
+
+
+
+.specialization-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: 10%;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 2px;
+}
+
+
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 5px;
+    border-radius: 4px;
+}
+
+button {
+    padding: 6px;
+    background-color: #0e74f1;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #005f87;
+}
+
+#payment-result {
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    color: green;
+}
+
